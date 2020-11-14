@@ -37,31 +37,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view)
     {
         //textView.setText("Рабоает");
-
+        int inp = Integer.parseInt(etInput.getText().toString());
         if (!game)
         {
-            int inp = Integer.parseInt(etInput.getText().toString());
-            if (value > inp)
+
+            if (value < inp)
             {
                 textView.setText("Перелёт");
             }
-            if (value < inp)
+            if (value > inp)
             {
                 textView.setText("Недолёт");
             }
             if (value == inp)
             {
-                bControl.setText("Перелёт");
+                bControl.setText("Начать заного!");
                 textView.setText("В точку!");
                 game = true;
             }
-            else
-            {
-                int value = (int)(Math.random()*100);
-                boolean game = false;
-                bControl.setText("Ввести значение");
-                textView.setText("Угадайте число от 1 до 100");
-            }
+        }
+        else
+        {
+            int value = (int)(Math.random()*100);
+            boolean game = false;
+            bControl.setText("Ввести значение");
+            textView.setText("Угадайте число от 1 до 100");
         }
     }
 }
