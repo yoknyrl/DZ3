@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Угадайка</string>
+    <string name="hit">ПОПЕБА!</string>
+    <string name="missb">Чуток переборщил(а)</string>
+    <string name="missm">Яуток не доборщил(а)</string>
+    <string name="inputmore">Сыграть еще!</string>
+    <string name="inputmiss">Вы ввели что то не то</string>
+    <string name="input_value">Ввести значение</string>
+    <string name="texti">Угадайте число от 1 до 100</string>
+</resources>
